@@ -4,6 +4,12 @@
 
 Ab Mitte Februar, gerne wieder so um 16h. Ich GRG werde informiert, danke
 
+Zu klären:
+
+-   Administrator für mehr als einen account möglich?
+-   mehrere Rollen für einen account möglich (z.B. Mitarbeiter und auch Kunde
+    zugleich)
+
 ## Link zu den Google Meetings
 
 <https://meet.google.com/rah-hihq-uyq>
