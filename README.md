@@ -1,5 +1,9 @@
 # Diplomarbeit Schwesterliebe
 
+## Nächstes Meeting:
+
+Ab Mitte Februar, gerne wieder so um 16h. Ich GRG werde informiert, danke
+
 ## Link zu den Google Meetings
 
 <https://meet.google.com/rah-hihq-uyq>
