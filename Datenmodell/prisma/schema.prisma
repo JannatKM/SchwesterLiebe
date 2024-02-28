@@ -1,0 +1,93 @@
+datasource db {
+    provider = "sqlite"
+    url      = "file:./dev.db"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+// Für ALLE: Mitarbeiter / Admin / Kunde
+model User {
+    id             Int             @id @default(autoincrement())
+    vorname        String
+    nachname       String
+    email          String          @unique
+    telefon        String
+    roles          Role[]
+    calendar       Termin[]
+    terminbuchungm Terminbuchung[]
+    terminbuchungk Terminbuchung[]
+    terminbuchungp Terminbuchung[]
+    Terminbuchung  Terminbuchung[]
+    Terminbuchung  Terminbuchung[]
+    Terminbuchung  Terminbuchung[]
+}
+
+model Rabatt {
+    id            Int             @id @default(autoincrement())
+    startDatum    DateTime
+    endDatum      DateTime
+    prozent       Int
+    terminbuchung Terminbuchung[]
+}
+
+model Produkt {
+    id           Int    @id @default(autoincrement())
+    name         String
+    beschreibung String
+    dauermin     Int
+    preis        Float
+}
+
+// Es gibt 3 Räume
+model Raum {
+    id       Int      @id @default(autoincrement())
+    name     String
+    calendar Termin[]
+}
+
+model Termin {
+    id    Int      @id @default(autoincrement())
+    start DateTime
+    ende  DateTime
+}
+
+model Buchung {
+    id          Int    @id @default(autoincrement())
+    termin      Termin
+    mitarbeiter User?
+    kunde       User
+}
+
+model Terminbuchung {
+    id            Int      @id @default(autoincrement())
+    datum         DateTime
+    kunde         User     @relation(name: "terminkunde", fields: [kundeId], references: [id])
+    kundeId       Int
+    mitarbeiter   User     @relation(name: "terminmitarbeiter", fields: [mitarbeiterId], references: [id])
+    mitarbeiterId Int
+    produkt       Produkt  @relation(fields: [produktId], references: [id])
+    produktId     Int
+    rabatt        Rabatt?  @relation(fields: [rabattId], references: [id])
+    rabattId      Int?
+    Raum          Raum     @relation(fields: [raumId], references: [id])
+    raumId        Int
+}
+
+model Produkt {
+    id                  Int             @id @default(autoincrement())
+    name                String
+    beschreibung        String
+    behandlungsdauermin Int
+    preis               Float
+    terminbuchung       Terminbuchung[]
+}
+
+// Roles: Mitarbeiter / Admin / Kunde
+model Role {
+    id     Int    @id @default(autoincrement())
+    name   String @unique
+    User   User?  @relation(fields: [userId], references: [id])
+    userId Int?
+}
