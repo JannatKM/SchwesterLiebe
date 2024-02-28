@@ -9,79 +9,76 @@ generator client {
 
 // Für ALLE: Mitarbeiter / Admin / Kunde
 model User {
-    id             Int             @id @default(autoincrement())
-    vorname        String
-    nachname       String
-    email          String          @unique
-    telefon        String
-    roles          Role[]
-    calendar       Termin[]
-    terminbuchungm Terminbuchung[]
-    terminbuchungk Terminbuchung[]
-    terminbuchungp Terminbuchung[]
-    Terminbuchung  Terminbuchung[]
-    Terminbuchung  Terminbuchung[]
-    Terminbuchung  Terminbuchung[]
+    id                Int       @id @default(autoincrement())
+    vorname           String
+    nachname          String
+    email             String    @unique
+    telefon           String
+    roles             Role[]
+    calendar          Termin[]
+    buchungenAlsMA    Buchung[] @relation(name: "buchungsmitarbeiter")
+    buchungenAlsKunde Buchung[] @relation(name: "buchungkunde")
 }
 
 model Rabatt {
-    id            Int             @id @default(autoincrement())
-    startDatum    DateTime
-    endDatum      DateTime
-    prozent       Int
-    terminbuchung Terminbuchung[]
+    id         Int       @id @default(autoincrement())
+    startDatum DateTime
+    endDatum   DateTime
+    prozent    Int
+    Buchung    Buchung[]
 }
 
 model Produkt {
-    id           Int    @id @default(autoincrement())
+    id           Int       @id @default(autoincrement())
     name         String
     beschreibung String
     dauermin     Int
     preis        Float
+    Buchung      Buchung[]
 }
 
 // Es gibt 3 Räume
 model Raum {
-    id       Int      @id @default(autoincrement())
+    id       Int       @id @default(autoincrement())
     name     String
     calendar Termin[]
+    Buchung  Buchung[]
 }
 
 model Termin {
-    id    Int      @id @default(autoincrement())
-    start DateTime
-    ende  DateTime
+    id          Int       @id @default(autoincrement())
+    art         Terminart @relation(fields: [terminartId], references: [id])
+    start       DateTime
+    ende        DateTime
+    User        User?     @relation(fields: [userId], references: [id])
+    userId      Int?
+    Raum        Raum?     @relation(fields: [raumId], references: [id])
+    raumId      Int?
+    terminartId Int
+    Buchung     Buchung[]
+}
+
+// Bereitschaft | Buchung | Pause | Ausnahme
+model Terminart {
+    id     Int      @id @default(autoincrement())
+    art    String   @unique
+    Termin Termin[]
 }
 
 model Buchung {
-    id          Int    @id @default(autoincrement())
-    termin      Termin
-    mitarbeiter User?
-    kunde       User
-}
-
-model Terminbuchung {
-    id            Int      @id @default(autoincrement())
-    datum         DateTime
-    kunde         User     @relation(name: "terminkunde", fields: [kundeId], references: [id])
+    id            Int     @id @default(autoincrement())
+    termin        Termin  @relation(fields: [terminId], references: [id])
+    mitarbeiter   User?   @relation(name: "buchungsmitarbeiter", fields: [mitarbeiterId], references: [id])
+    mitarbeiterId Int?
+    kunde         User    @relation(name: "buchungkunde", fields: [kundeId], references: [id])
     kundeId       Int
-    mitarbeiter   User     @relation(name: "terminmitarbeiter", fields: [mitarbeiterId], references: [id])
-    mitarbeiterId Int
-    produkt       Produkt  @relation(fields: [produktId], references: [id])
+    produkt       Produkt @relation(fields: [produktId], references: [id])
+    rabatt        Rabatt? @relation(fields: [rabattId], references: [id])
+    raum          Raum?   @relation(fields: [raumId], references: [id])
+    terminId      Int
     produktId     Int
-    rabatt        Rabatt?  @relation(fields: [rabattId], references: [id])
     rabattId      Int?
-    Raum          Raum     @relation(fields: [raumId], references: [id])
-    raumId        Int
-}
-
-model Produkt {
-    id                  Int             @id @default(autoincrement())
-    name                String
-    beschreibung        String
-    behandlungsdauermin Int
-    preis               Float
-    terminbuchung       Terminbuchung[]
+    raumId        Int?
 }
 
 // Roles: Mitarbeiter / Admin / Kunde

@@ -4,3 +4,5 @@ target
 out
 bin
 .~lock*#
+dev.db
+dev.db-journal
