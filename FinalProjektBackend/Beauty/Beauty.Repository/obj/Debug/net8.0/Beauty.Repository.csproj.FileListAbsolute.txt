@@ -1,0 +1,17 @@
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\bin\Debug\net8.0\Beauty.Repository.deps.json
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\bin\Debug\net8.0\Beauty.Repository.dll
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\bin\Debug\net8.0\Beauty.Repository.pdb
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\bin\Debug\net8.0\Beauty.Entity.dll
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\bin\Debug\net8.0\Beauty.Shared.dll
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\bin\Debug\net8.0\Beauty.Entity.pdb
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\bin\Debug\net8.0\Beauty.Shared.pdb
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\obj\Debug\net8.0\Beauty.Repository.csproj.AssemblyReference.cache
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\obj\Debug\net8.0\Beauty.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\obj\Debug\net8.0\Beauty.Repository.AssemblyInfoInputs.cache
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\obj\Debug\net8.0\Beauty.Repository.AssemblyInfo.cs
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\obj\Debug\net8.0\Beauty.Repository.csproj.CoreCompileInputs.cache
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\obj\Debug\net8.0\Beauty.R.6963A93D.Up2Date
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\obj\Debug\net8.0\Beauty.Repository.dll
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\obj\Debug\net8.0\refint\Beauty.Repository.dll
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\obj\Debug\net8.0\Beauty.Repository.pdb
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Repository\obj\Debug\net8.0\ref\Beauty.Repository.dll

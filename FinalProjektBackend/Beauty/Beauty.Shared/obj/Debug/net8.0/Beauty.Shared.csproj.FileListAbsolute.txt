@@ -1,0 +1,15 @@
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\bin\Debug\net8.0\Beauty.Shared.deps.json
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\bin\Debug\net8.0\Beauty.Shared.dll
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\bin\Debug\net8.0\Beauty.Shared.pdb
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\bin\Debug\net8.0\Beauty.Entity.dll
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\bin\Debug\net8.0\Beauty.Entity.pdb
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\obj\Debug\net8.0\Beauty.Shared.csproj.AssemblyReference.cache
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\obj\Debug\net8.0\Beauty.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\obj\Debug\net8.0\Beauty.Shared.AssemblyInfoInputs.cache
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\obj\Debug\net8.0\Beauty.Shared.AssemblyInfo.cs
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\obj\Debug\net8.0\Beauty.Shared.csproj.CoreCompileInputs.cache
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\obj\Debug\net8.0\Beauty.S.E5EB96B9.Up2Date
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\obj\Debug\net8.0\Beauty.Shared.dll
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\obj\Debug\net8.0\refint\Beauty.Shared.dll
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\obj\Debug\net8.0\Beauty.Shared.pdb
+C:\Users\43681\OneDrive\Desktop\FinalProjektBackend\Beauty\Beauty.Shared\obj\Debug\net8.0\ref\Beauty.Shared.dll

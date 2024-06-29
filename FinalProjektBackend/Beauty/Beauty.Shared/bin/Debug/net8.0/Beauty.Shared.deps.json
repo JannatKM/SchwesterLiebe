@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Beauty.Shared/1.0.0": {
+        "dependencies": {
+          "Beauty.Entity": "1.0.0"
+        },
+        "runtime": {
+          "Beauty.Shared.dll": {}
+        }
+      },
+      "Beauty.Entity/1.0.0": {
+        "runtime": {
+          "Beauty.Entity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Beauty.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Beauty.Entity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
